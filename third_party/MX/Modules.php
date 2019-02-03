@@ -82,7 +82,8 @@ class Modules
     {
         // Backward function
         // The function each() has been DEPRECATED as of PHP 7.2.0. Relying on this function is highly discouraged
-        if (version_compare(phpversion(), '7.2', '<')) {
+        // Before PHP 7.1.0, list() only worked on numerical arrays and assumes the numerical indices start at 0.
+        if (version_compare(phpversion(), '7.1', '<')) {
             // php version isn't high enough
             (is_array($module)) ? list($module, $params) = each($module) : $params = null;
         } else {
