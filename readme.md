@@ -9,8 +9,8 @@ Module Controllers can be used as normal Controllers or HMVC Controllers and the
 
 # Help to develop a new version
 
-The original source from Bitbucket is not updated since 2016-03-13 that is very bad.
-with php 7.x new features are made in php....
+**The original source from Bitbucket is not updated since 2016-03-13 that is very bad,
+we hope to find people who help to develop a new version of HMVC.**
 
 ### ToDo:
 
