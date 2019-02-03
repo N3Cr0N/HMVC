@@ -9,22 +9,22 @@ Module Controllers can be used as normal Controllers or HMVC Controllers and the
 
 # Help to develop a new version
 
-The original source from Bitbucket is not updated since 2016-03-13 that is very bad.
-with php 7.x new features are made in php....
+**The original source from Bitbucket is not updated since 2016-03-13 that is very bad,
+i hope to find people who help to develop a new version of HMVC.**
 
 ### ToDo:
 
 - PHP PSR (PHP Standards Recommendations) implement
 - New PHP 7.x features implement
-- Delete deprecated PHP functions and develop compliant PHP 7 functions
+- Find deprecated PHP functions, develop backward and compliant PHP 7.x functions (Use the "PHP Backward branch" and merge your changes)
 - Add namespaces support
-- ....
+- Code documentation with DocBlocks
+- Develop Unit tests
 
 ## Requirements:
 
-- PHP 7.2
+- PHP version 5.6 or newer is recommended (I have include a backward function for each() and list(), you can use PHP v5.6 or v7.2)
 - Codeigniter 3.1.x
-
 
 ## Features:
 
