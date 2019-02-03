@@ -40,6 +40,11 @@ class CI
 {
     public static $APP;
 
+/**
+ * [__construct description]
+ *
+ * @method __construct
+ */
     public function __construct()
     {
 

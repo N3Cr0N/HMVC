@@ -41,6 +41,11 @@ class CI extends CI_Controller
 {
     public static $APP;
 
+/**
+ * [__construct description]
+ *
+ * @method __construct
+ */
     public function __construct()
     {
 
