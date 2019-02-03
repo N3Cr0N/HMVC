@@ -20,6 +20,12 @@ with php 7.x new features are made in php....
 - Add namespaces support
 - ....
 
+## Requirements:
+
+- PHP 7.2
+- Codeigniter 3.1.x
+
+
 ## Features:
 
 All controllers can contain an $autoload class variable, which holds an array of items to load prior to running the constructor. This can be used together with module/config/autoload.php, however using the $autoload variable only works for that specific controller.
