@@ -16,7 +16,7 @@ with php 7.x new features are made in php....
 
 - PHP PSR (PHP Standards Recommendations) implement
 - New PHP 7.x features implement
-- Find deprecated PHP functions, develop backward and compliant PHP 7.x functions
+- Find deprecated PHP functions, develop backward and compliant PHP 7.x functions (Use the "PHP Backward branch" and merge your changes)
 - Add namespaces support
 - ....
 
