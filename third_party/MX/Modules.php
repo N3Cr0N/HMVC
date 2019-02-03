@@ -1,6 +1,6 @@
-<?php (defined('BASEPATH')) or exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
-(defined('EXT')) or define('EXT', '.php');
+defined('EXT') or define('EXT', '.php');
 
 global $CFG;
 
