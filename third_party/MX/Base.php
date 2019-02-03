@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* load MX core classes */
-require_once dirname(__FILE__).'/Lang.php';
-require_once dirname(__FILE__).'/Config.php';
+require_once __DIR__ .'/Lang.php';
+require_once __DIR__ .'/Config.php';
 
 /**
  * Modular Extensions - HMVC
