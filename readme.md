@@ -22,9 +22,8 @@ with php 7.x new features are made in php....
 
 ## Requirements:
 
-- PHP 7.2
+- PHP version 5.6 or newer is recommended (We have include a backward function for each() and list(), you can use PHP v5.6 or v7.2)
 - Codeigniter 3.1.x
-
 
 ## Features:
 
