@@ -7,6 +7,14 @@ HMVC stands for Hierarchical Model View Controller.
 Module Controllers can be used as normal Controllers or HMVC Controllers and they can be used as widgets to help you build view partials.
 
 
+# Help to develop a new version
+
+The original source from Bitbucket is not updated since 2016-03-13 that is very bad.
+with php 7.x new features are made in php....
+
+
+
+
 ## Features:
 
 All controllers can contain an $autoload class variable, which holds an array of items to load prior to running the constructor. This can be used together with module/config/autoload.php, however using the $autoload variable only works for that specific controller.
