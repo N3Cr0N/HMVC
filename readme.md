@@ -138,6 +138,7 @@ class Xyz extends MX_Controller
 ## View Partials
 
 Using a Module as a view partial from within a view is as easy as writing:
+
 ```
 <?php echo Modules::run('module/controller/method', $param, $...); ?>
 ```
