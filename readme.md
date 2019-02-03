@@ -134,3 +134,64 @@ class Xyz extends MX_Controller
 }
 
 ```
+
+## View Partials
+
+Using a Module as a view partial from within a view is as easy as writing:
+```
+<?php echo Modules::run('module/controller/method', $param, $...); ?>
+```
+Parameters are optional, You may pass any number of parameters.
+
+## Modular Extensions installation
+
+    Start with a clean CI install
+    Set $config[‘base_url’] correctly for your installation
+    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    Drop Modular Extensions third_party files into the application/third_party directory
+    Drop Modular Extensions core files into application/core, the MY_Controller.php file is not required unless you wish to create your own controller extension
+    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    Create module directory structure application/modules/welcome/controllers
+    Move controller application/controllers/welcome.php to application/modules/welcome/controllers/welcome.php
+    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    Create directory application/modules/welcome/views
+    Move view application/views/welcome_message.php to application/modules/welcome/views/welcome_message.php
+    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+
+You should now have a running Modular Extensions installation.
+
+## Installation Guide Hints:
+
+-Steps 1-3 tell you how to get a standard CI install working - if you have a clean/tested CI install, skip to step 4.
+
+-Steps 4-5 show that normal CI still works after installing MX - it shouldn’t interfere with the normal CI setup.
+
+-Steps 6-8 show MX working alongside CI - controller moved to the “welcome” module, the view file remains in the CI application/views directory - MX can find module resources in several places, including the application directory.
+
+-Steps 9-11 show MX working with both controller and view in the “welcome” module - there should be no files in the application/controllers or application/views directories.
+
+## FAQ
+
+Q. What are modules, why should I use them?
+
+A. (http://en.wikipedia.org/wiki/Module)
+
+(http://en.wikipedia.org/wiki/Modular_programming)
+
+(http://blog.fedecarg.com/2008/06/28/a-modular-approach-to-web-development)
+
+Q. What is Modular HMVC, why should I use it?
+
+A. Modular HMVC = Hierarchy of multiple MVC triads
+
+This is most useful when you need to load a view and its data within a view. Think about adding a shopping cart to a page. The shopping cart needs its own controller which may call a model to get cart data. Then the controller needs to load the data into a view. So instead of the main controller handling the page and the shopping cart, the shopping cart MVC can be loaded directly in the page. The main controller doesn’t need to know about it, and is totally isolated from it.
+
+In CI we can’t call more than 1 controller per request. Therefore, to achieve HMVC, we have to simulate controllers. It can be done with libraries, or with this “Modular Extensions HMVC” contribution.
+
+The differences between using a library and a “Modular HMVC” HMVC class is: 1. No need to get and use the CI instance within an HMVC class 2. HMVC classes are stored in a modules directory as opposed to the libraries directory.
+
+Q. Is Modular Extensions HMVC the same as Modular Separation?
+
+A. Yes and No. Like Modular Separation, Modular Extensions makes modules “portable” to other installations. For example, if you make a nice self-contained model-controller-view set of files you can bring that MVC into another project by copying just one folder - everything is in one place instead of spread around model, view and controller folders.
+
+Modular HMVC means modular MVC triads. Modular Separation and Modular Extensions allows related controllers, models, libraries, views, etc. to be grouped together in module directories and used like a mini application. But, Modular Extensions goes one step further and allows those modules to “talk” to each other. You can get controller output without having to go out through the http interface again.
