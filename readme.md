@@ -19,6 +19,7 @@ i hope to find people who help to develop a new version of HMVC.**
 - Find deprecated PHP functions, develop backward and compliant PHP 7.x functions (Use the "PHP Backward branch" and merge your changes)
 - Add namespaces support
 - Code documentation with DocBlocks
+- Code optimisation
 - Develop Unit tests
 
 ## Requirements:
