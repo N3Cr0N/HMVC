@@ -161,18 +161,18 @@ Parameters are optional, You may pass any number of parameters.
 
 ## Modular Extensions installation
 
-    1. Start with a clean CI install
-    2. Set $config[‘base_url’] correctly for your installation
-    3. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
-    4. Drop Modular Extensions third_party files into the application/third_party directory
-    5. Drop Modular Extensions core files into application/core, the MY_Controller.php file is not required unless you wish to create your own controller extension
-    6. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
-    7. Create module directory structure application/modules/welcome/controllers
-    8. Move controller application/controllers/welcome.php to application/modules/welcome/controllers/welcome.php
-    9. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
-    10. Create directory application/modules/welcome/views
-    11. Move view application/views/welcome_message.php to application/modules/welcome/views/welcome_message.php
-    12. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+1. Start with a clean CI install
+2. Set $config[‘base_url’] correctly for your installation
+3. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+4. Drop Modular Extensions third_party files into the application/third_party directory
+5. Drop Modular Extensions core files into application/core, the MY_Controller.php file is not required unless you wish to create your own controller extension
+6. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+7. Create module directory structure application/modules/welcome/controllers
+8. Move controller application/controllers/welcome.php to application/modules/welcome/controllers/welcome.php
+9. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+10. Create directory application/modules/welcome/views 
+11. Move view application/views/welcome_message.php to application/modules/welcome/views/welcome_message.php
+12. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
 
 You should now have a running Modular Extensions installation.
 
@@ -188,7 +188,7 @@ You should now have a running Modular Extensions installation.
 
 ## FAQ
 
-Q. What are modules, why should I use them?
+**Q. What are modules, why should I use them?**
 
 A. (http://en.wikipedia.org/wiki/Module)
 
@@ -196,7 +196,7 @@ A. (http://en.wikipedia.org/wiki/Module)
 
 (http://blog.fedecarg.com/2008/06/28/a-modular-approach-to-web-development)
 
-Q. What is Modular HMVC, why should I use it?
+**Q. What is Modular HMVC, why should I use it?**
 
 A. Modular HMVC = Hierarchy of multiple MVC triads
 
@@ -204,9 +204,12 @@ This is most useful when you need to load a view and its data within a view. Thi
 
 In CI we can’t call more than 1 controller per request. Therefore, to achieve HMVC, we have to simulate controllers. It can be done with libraries, or with this “Modular Extensions HMVC” contribution.
 
-The differences between using a library and a “Modular HMVC” HMVC class is: 1. No need to get and use the CI instance within an HMVC class 2. HMVC classes are stored in a modules directory as opposed to the libraries directory.
+The differences between using a library and a “Modular HMVC” HMVC class is:
 
-Q. Is Modular Extensions HMVC the same as Modular Separation?
+1. No need to get and use the CI instance within an HMVC class 
+2. HMVC classes are stored in a modules directory as opposed to the libraries directory.
+
+**Q. Is Modular Extensions HMVC the same as Modular Separation?**
 
 A. Yes and No. Like Modular Separation, Modular Extensions makes modules “portable” to other installations. For example, if you make a nice self-contained model-controller-view set of files you can bring that MVC into another project by copying just one folder - everything is in one place instead of spread around model, view and controller folders.
 
