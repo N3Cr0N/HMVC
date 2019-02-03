@@ -141,23 +141,25 @@ Using a Module as a view partial from within a view is as easy as writing:
 
 ```
 <?php echo Modules::run('module/controller/method', $param, $...); ?>
+
 ```
 Parameters are optional, You may pass any number of parameters.
 
+
 ## Modular Extensions installation
 
-    Start with a clean CI install
-    Set $config[‘base_url’] correctly for your installation
-    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
-    Drop Modular Extensions third_party files into the application/third_party directory
-    Drop Modular Extensions core files into application/core, the MY_Controller.php file is not required unless you wish to create your own controller extension
-    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
-    Create module directory structure application/modules/welcome/controllers
-    Move controller application/controllers/welcome.php to application/modules/welcome/controllers/welcome.php
-    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
-    Create directory application/modules/welcome/views
-    Move view application/views/welcome_message.php to application/modules/welcome/views/welcome_message.php
-    Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    1. Start with a clean CI install
+    2. Set $config[‘base_url’] correctly for your installation
+    3. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    4. Drop Modular Extensions third_party files into the application/third_party directory
+    5. Drop Modular Extensions core files into application/core, the MY_Controller.php file is not required unless you wish to create your own controller extension
+    6. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    7. Create module directory structure application/modules/welcome/controllers
+    8. Move controller application/controllers/welcome.php to application/modules/welcome/controllers/welcome.php
+    9. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
+    10. Create directory application/modules/welcome/views
+    11. Move view application/views/welcome_message.php to application/modules/welcome/views/welcome_message.php
+    12. Access the URL /index.php/welcome => shows Welcome to CodeIgniter
 
 You should now have a running Modular Extensions installation.
 
