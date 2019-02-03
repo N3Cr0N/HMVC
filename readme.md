@@ -18,7 +18,7 @@ with php 7.x new features are made in php....
 - New PHP 7.x features implement
 - Find deprecated PHP functions, develop backward and compliant PHP 7.x functions (Use the "PHP Backward branch" and merge your changes)
 - Add namespaces support
-- ....
+- Code documentation with DocBlocks
 
 ## Requirements:
 
