@@ -12,10 +12,11 @@ Module Controllers can be used as normal Controllers or HMVC Controllers and the
 The original source from Bitbucket is not updated since 2016-03-13 that is very bad.
 with php 7.x new features are made in php....
 
-ToDo:
+### ToDo:
+
 - PHP PSR (PHP Standards Recommendations) implement
 - New PHP 7.x features implement
-- Delete deprecated PHP functions and develop a compliant PHP 7 function
+- Delete deprecated PHP functions and develop compliant PHP 7 functions
 - Add Namespaces
 - ....
 
