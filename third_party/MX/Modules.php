@@ -80,14 +80,21 @@ class Modules
     /** Load a module controller **/
     public static function load($module)
     {
-        if (!is_array($module)) {
-            $params = null;
+        // Backward function
+        // The function each() has been DEPRECATED as of PHP 7.2.0. Relying on this function is highly discouraged
+        if (version_compare(phpversion(), '7.2', '<')) {
+            // php version isn't high enough
+            (is_array($module)) ? list($module, $params) = each($module) : $params = null;
         } else {
-            $keys = array_keys($module);
+            if (!is_array($module)) {
+                $params = null;
+            } else {
+                $keys = array_keys($module);
 
-            $params = $module[$keys[0]];
+                $params = $module[$keys[0]];
 
-            $module = $keys[0];
+                $module = $keys[0];
+            }
         }
 
         /* get the requested controller class name */
