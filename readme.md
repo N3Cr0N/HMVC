@@ -198,3 +198,10 @@ Q. Is Modular Extensions HMVC the same as Modular Separation?
 A. Yes and No. Like Modular Separation, Modular Extensions makes modules “portable” to other installations. For example, if you make a nice self-contained model-controller-view set of files you can bring that MVC into another project by copying just one folder - everything is in one place instead of spread around model, view and controller folders.
 
 Modular HMVC means modular MVC triads. Modular Separation and Modular Extensions allows related controllers, models, libraries, views, etc. to be grouped together in module directories and used like a mini application. But, Modular Extensions goes one step further and allows those modules to “talk” to each other. You can get controller output without having to go out through the http interface again.
+
+
+# Source Modular Extensions
+
+* [Wiredesignz](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc)
+
+
