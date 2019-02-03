@@ -10,7 +10,7 @@ Module Controllers can be used as normal Controllers or HMVC Controllers and the
 # Help to develop a new version
 
 **The original source from Bitbucket is not updated since 2016-03-13 that is very bad,
-we hope to find people who help to develop a new version of HMVC.**
+i hope to find people who help to develop a new version of HMVC.**
 
 ### ToDo:
 
@@ -23,7 +23,7 @@ we hope to find people who help to develop a new version of HMVC.**
 
 ## Requirements:
 
-- PHP version 5.6 or newer is recommended (We have include a backward function for each() and list(), you can use PHP v5.6 or v7.2)
+- PHP version 5.6 or newer is recommended (I have include a backward function for each() and list(), you can use PHP v5.6 or v7.2)
 - Codeigniter 3.1.x
 
 ## Features:
