@@ -102,9 +102,17 @@ class Modules
         $alias = strtolower(basename($module));
 
         /* create or return an existing controller from the registry */
-        if (! isset(self::$registry[$alias])) {
-            /* find the controller */
-            list($class) = CI::$APP->router->locate(explode('/', $module));
+        if (!isset(self::$registry[$alias])) {
+
+        // Backward function
+            // Before PHP 7.1.0, list() only worked on numerical arrays and assumes the numerical indices start at 0.
+            if (version_compare(phpversion(), '7.1', '<')) {
+                // php version isn't high enough
+                /* find the controller */
+                list($class) = CI::$APP->router->locate(explode('/', $module));
+            } else {
+                [$class] = CI::$APP->router->locate(explode('/', $module));
+            }
 
             /* controller cannot be located */
             if (empty($class)) {
@@ -225,8 +233,18 @@ class Modules
     {
         /* load the route file */
         if (! isset(self::$routes[$module])) {
-            if (list($path) = self::find('routes', $module, 'config/')) {
-                $path && self::$routes[$module] = self::load_file('routes', $path, 'route');
+
+        // Backward function
+            // Before PHP 7.1.0, list() only worked on numerical arrays and assumes the numerical indices start at 0.
+            if (version_compare(phpversion(), '7.1', '<')) {
+                // php version isn't high enough
+                if (list($path) = self::find('routes', $module, 'config/')) {
+                    $path && self::$routes[$module] = self::load_file('routes', $path, 'route');
+                }
+            } else {
+                if ([$path] = self::find('routes', $module, 'config/')) {
+                    $path && self::$routes[$module] = self::load_file('routes', $path, 'route');
+                }
             }
         }
 
