@@ -14,7 +14,7 @@ help to develop a new version of HMVC.**
 
 ### ToDo:
 
-- [x] PHP PSR 1-2 (PHP Standards Recommendations) implement (Done)
+- [x] PHP PSR 1-2 (PHP Standards Recommendations) implement
 - New PHP 7.x features implement
 - [x] Find deprecated PHP functions, develop backward and compliant PHP 7.x functions (Use the "PHP Backward branch" and merge your changes)
 - Add namespaces support
