@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/n3cr0n/hmvc/badge/php-backward-branch)](https://www.codefactor.io/repository/github/n3cr0n/hmvc/overview/php-backward-branch)
+
 # Modular Extensions - HMVC
 
 Modular Extensions makes the CodeIgniter PHP framework modular. Modules are groups of independent components, typically model, controller and view, arranged in an application modules sub-directory that can be dropped into other CodeIgniter applications.
