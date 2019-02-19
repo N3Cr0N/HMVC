@@ -1,6 +1,6 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/n3cr0n/hmvc/badge)](https://www.codefactor.io/repository/github/n3cr0n/hmvc)
+[![CodeFactor](https://www.codefactor.io/repository/github/n3cr0n/hmvc/badge)](https://www.codefactor.io/repository/github/n3cr0n/hmvc) [![BCH compliance](https://bettercodehub.com/edge/badge/N3Cr0N/HMVC?branch=master)](https://bettercodehub.com/)
 
-[![BCH compliance](https://bettercodehub.com/edge/badge/N3Cr0N/HMVC?branch=master)](https://bettercodehub.com/)
+
 
 # Modular Extensions - HMVC
 
