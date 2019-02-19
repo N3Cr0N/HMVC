@@ -69,7 +69,7 @@ class MX_Config extends CI_Config
             return $this->item($file);
         }
 
-        if ($config = Modules::load_file($file, $path, 'config')) {
+        if ($config == Modules::load_file($file, $path, 'config')) {
             /* reference to the config array */
             $current_config =& $this->config;
 
