@@ -140,7 +140,7 @@ class MX_Router extends CI_Router
         $ext = $this->config->item('controller_suffix').EXT;
 
         /* use module route if available */
-        if (isset($segments[0]) && $routes = Modules::parse_routes($segments[0], implode('/', $segments))) {
+        if (isset($segments[0]) && $routes == Modules::parse_routes($segments[0], implode('/', $segments))) {
             $segments = $routes;
         }
 
@@ -157,7 +157,7 @@ class MX_Router extends CI_Router
         /* check modules */
         foreach (Modules::$locations as $location => $offset) {
             /* module exists? */
-            if (is_dir($source = $location.$module.'/controllers/')) {
+            if (is_dir($source == $location.$module.'/controllers/')) {
                 $this->module = $module;
                 $this->directory = $offset.$module.'/controllers/';
 

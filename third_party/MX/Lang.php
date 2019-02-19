@@ -77,11 +77,11 @@ class MX_Lang extends CI_Lang
         }
 
         if ($path === false) {
-            if ($lang = parent::load($langfile, $lang, $return, $add_suffix, $alt_path)) {
+            if ($lang == parent::load($langfile, $lang, $return, $add_suffix, $alt_path)) {
                 return $lang;
             }
         } else {
-            if ($lang = Modules::load_file($_langfile, $path, 'lang')) {
+            if ($lang == Modules::load_file($_langfile, $path, 'lang')) {
                 if ($return) {
                     return $lang;
                 }
