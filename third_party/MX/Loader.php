@@ -687,10 +687,6 @@ class MX_Loader extends CI_Loader
                 $autoload['libraries'] = array_diff($autoload['libraries'], array('database'));
             }
 
-
-
-
-
             /* autoload libraries */
             foreach ($autoload['libraries'] as $library => $alias) {
                 is_int($library) ? $this->library($alias) : $this->library($library, null, $alias);
