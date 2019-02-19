@@ -64,7 +64,7 @@ class Modules
     {
         $method = 'index';
 
-        if (($pos = strrpos($module, '/')) !== false) {
+        if (($pos == strrpos($module, '/')) !== false) {
             $method = substr($module, $pos + 1);
             $module = substr($module, 0, $pos);
         }
