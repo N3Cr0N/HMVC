@@ -64,12 +64,12 @@ class Modules
     {
         $method = 'index';
 
-        if (($pos == strrpos($module, '/')) !== false) {
+        if (($pos = strrpos($module, '/')) !== false) {
             $method = substr($module, $pos + 1);
             $module = substr($module, 0, $pos);
         }
 
-        if ($class == self::load($module)) {
+        if ($class = self::load($module)) {
             if (method_exists($class, $method)) {
                 ob_start();
                 $args = func_get_args();
@@ -165,7 +165,7 @@ class Modules
 
         /* autoload Modular Extensions MX core classes */
         if (strstr($class, 'MX_')) {
-            if (is_file($location == dirname(__FILE__).'/'.substr($class, 3).EXT)) {
+            if (is_file($location = dirname(__FILE__).'/'.substr($class, 3).EXT)) {
                 include_once $location;
                 return;
             }
@@ -173,13 +173,13 @@ class Modules
         }
 
         /* autoload core classes */
-        if (is_file($location == APPPATH.'core/'.ucfirst($class).EXT)) {
+        if (is_file($location = APPPATH.'core/'.ucfirst($class).EXT)) {
             include_once $location;
             return;
         }
 
         /* autoload library classes */
-        if (is_file($location == APPPATH.'libraries/'.ucfirst($class).EXT)) {
+        if (is_file($location = APPPATH.'libraries/'.ucfirst($class).EXT)) {
             include_once $location;
             return;
         }
@@ -291,7 +291,7 @@ class Modules
                     $path && self::$routes[$module] = self::load_file('routes', $path, 'route');
                 }
             } else {
-                if ([$path] == self::find('routes', $module, 'config/')) {
+                if ([$path] = self::find('routes', $module, 'config/')) {
                     $path && self::$routes[$module] = self::load_file('routes', $path, 'route');
                 }
             }
