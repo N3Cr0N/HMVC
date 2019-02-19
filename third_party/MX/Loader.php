@@ -90,7 +90,7 @@ class MX_Loader extends CI_Loader
 
         foreach (Modules::$locations as $location => $offset) {
             /* only add a module path if it exists */
-            if (is_dir($module_path == $location.$module.'/') && ! in_array($module_path, $this->_ci_model_paths)) {
+            if (is_dir($module_path = $location.$module.'/') && ! in_array($module_path, $this->_ci_model_paths)) {
                 array_unshift($this->_ci_model_paths, $module_path);
             }
         }
@@ -249,7 +249,7 @@ class MX_Loader extends CI_Loader
 
         $class = strtolower(basename($library));
 
-        if (isset($this->_ci_classes[$class]) && $_alias == $this->_ci_classes[$class]) {
+        if (isset($this->_ci_classes[$class]) && $_alias = $this->_ci_classes[$class]) {
             return $this;
         }
 
@@ -447,7 +447,7 @@ class MX_Loader extends CI_Loader
             [$path, $_plugin] = Modules::find($plugin.'_pi', $this->_module, 'plugins/');
         }
 
-        if ($path === false && ! is_file($_plugin == APPPATH.'plugins/'.$_plugin.EXT)) {
+        if ($path === false && ! is_file($_plugin = APPPATH.'plugins/'.$_plugin.EXT)) {
             show_error("Unable to locate the plugin file: {$_plugin}");
         }
 
@@ -555,7 +555,7 @@ class MX_Loader extends CI_Loader
             $_ci_file = pathinfo($_ci_view, PATHINFO_EXTENSION) ? $_ci_view : $_ci_view.EXT;
 
             foreach ($this->_ci_view_paths as $path => $cascade) {
-                if (file_exists($view == $path.$_ci_file)) {
+                if (file_exists($view = $path.$_ci_file)) {
                     $_ci_path = $view;
                     break;
                 }
@@ -681,7 +681,7 @@ class MX_Loader extends CI_Loader
 
         /* autoload database & libraries */
         if (isset($autoload['libraries'])) {
-            if (!$db == CI::$APP->config->item('database') && in_array('database', $autoload['libraries'])) {
+            if (!$db = CI::$APP->config->item('database') && in_array('database', $autoload['libraries'])) {
                 $this->database();
 
                 $autoload['libraries'] = array_diff($autoload['libraries'], array('database'));
