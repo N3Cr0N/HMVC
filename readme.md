@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/22794dc110554285a7655ca2e4733877)](https://app.codacy.com/app/N3Cr0N/HMVC?utm_source=github.com&utm_medium=referral&utm_content=N3Cr0N/HMVC&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/n3cr0n/hmvc/badge)](https://www.codefactor.io/repository/github/n3cr0n/hmvc) [![BCH compliance](https://bettercodehub.com/edge/badge/N3Cr0N/HMVC?branch=master)](https://bettercodehub.com/) [![Maintainability](https://api.codeclimate.com/v1/badges/04987b2a4319e9b929ee/maintainability)](https://codeclimate.com/github/N3Cr0N/HMVC/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/04987b2a4319e9b929ee/test_coverage)](https://codeclimate.com/github/N3Cr0N/HMVC/test_coverage)
 
 # Modular Extensions - HMVC
