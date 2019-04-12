@@ -59,7 +59,7 @@ class MX_Router extends CI_Router
      *
      * @param  array        $segments [description]
      */
-    protected function _set_request($segments = array())
+    protected function _set_request($segments = [])
     {
         if ($this->translate_uri_dashes === true) {
             foreach (range(0, 2) as $v) {
@@ -237,7 +237,7 @@ class MX_Router extends CI_Router
             $sgs = sscanf($_route, '%[^/]/%[^/]/%[^/]/%s', $module, $directory, $class, $method);
 
             // set the module/controller directory location if found
-            if ($this->locate(array($module, $directory, $class))) {
+            if ($this->locate([$module, $directory, $class])) {
                 //reset to class/method
                 switch ($sgs) {
                     case 1: $_route = $module.'/index';

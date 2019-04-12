@@ -38,7 +38,7 @@ require_once __DIR__ .'/Base.php';
  **/
 class MX_Controller
 {
-    public $autoload = array();
+    public $autoload = [];
 
     /**
      * [__construct description]
