@@ -38,10 +38,10 @@ All controllers can contain an $autoload class variable, which holds an array of
 <?php     
 class Xyz extends MX_Controller 
 {
-    $autoload = array(
+    $autoload = [
         'helper'    => array('url', 'form'),
         'libraries' => array('email'),
-    );
+    ];
 }
 
 ```
@@ -50,9 +50,9 @@ The Modules::$locations array may be set in the application/config.php file. ie:
 
 ```
 <?php
-$config['modules_locations'] = array(
+$config['modules_locations'] = [
     APPPATH.'modules/' => '../modules/',
-);
+];
 
 ```
 
