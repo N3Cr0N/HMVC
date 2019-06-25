@@ -508,6 +508,21 @@ class MX_Loader extends CI_Loader
     }
 
     /**
+     * [_ci_object_to_array description]
+     *
+     * @method _ci_object_to_array
+     *
+     * @param  [type]            $object [description]
+     *
+     * @return [type]                       [description]
+     */
+    protected function _ci_object_to_array($object) {
+
+	return is_object($object) ? get_object_vars($object) : $object;
+ 
+    }
+    
+    /**
      * [_ci_get_component description]
      *
      * @method _ci_get_component
